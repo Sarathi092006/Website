@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BookMyTrip - Hotels, Flights and Holidays</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="container top-row">
+    <a href="#" class="logo">bookmy<span>trip<small>.com</small></span></a>
+    <div class="support">
+      <span class="phone-icon">&#9742;</span>
+      <div><small>Call 24/7 Support</small><br><b>+91 9345550415</b></div>
+    </div>
+    <form class="site-search" onsubmit="return false">
+      <input type="text" placeholder="Search entire website here">
+      <button type="button" aria-label="Search">&#9906;</button>
+    </form>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container nav-row">
+    <button class="menu-toggle" id="menuToggle">&#9776; <span>Home</span></button>
+    <ul class="menu" id="menu">
+      <li class="has-sub">
+        <a href="#">Hotels</a>
+        <ul class="sub">
+          <li><a href="#">Hotels in India</a></li>
+          <li><a href="#">International Hotels</a></li>
+          <li><a href="#">International Hostels</a></li>
+          <li><a href="#">Popular Hotels in Asia</a></li>
+          <li><a href="#">Popular Hotels in Europe</a></li>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">Hotel Deals of the Week</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Flights</a></li>
+      <li><a href="#">Vacations</a></li>
+      <li><a href="#">Hot Deals</a></li>
+      <li><a href="#">Travel Guides</a></li>
+      <li><a href="#">Blogs</a></li>
+    </ul>
+    <div class="auth">
+      <a href="#" class="btn-yellow">SIGN IN</a>
+      <a href="#" class="btn-yellow">MY ACCOUNT</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-card" id="heroCard">
+    <h2>Paris Hilton Hotel, Mumbai, India</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="hero-price"><b>RS 1200</b> <small>Inclusive of food, dinner</small></div>
+  </div>
+
+  <div class="booking">
+    <div class="booking-tab">Book Your Trip</div>
+    <form class="booking-form" id="bookingForm">
+      <label>What?
+        <select><option>Hotel</option><option>Flight</option><option>Vacation</option></select>
+      </label>
+      <label>Where?
+        <select><option>Location</option><option>Mumbai</option><option>Paris</option><option>Zurich</option></select>
+      </label>
+      <label>When?
+        <input type="date" id="tripDate">
+      </label>
+      <label class="who">Who?
+        <span class="who-row">
+          <select><option>Rooms</option><option>1</option><option>2</option><option>3</option></select>
+          <select><option>Adults</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          <select><option>Children</option><option>0</option><option>1</option><option>2</option><option>3</option></select>
+        </span>
+      </label>
+      <button type="submit" class="btn-search">SEARCH</button>
+    </form>
+  </div>
+</section>
+
+<main class="content">
+  <div class="container">
+
+    <div class="sec-head">
+      <h3>Popular Hotels</h3>
+      <span class="line"></span>
+      <div class="arrows">
+        <button id="prev" aria-label="Previous">&#8249;</button>
+        <button id="next" aria-label="Next">&#8250;</button>
+      </div>
+    </div>
+    <div class="hotels" id="hotels">
+      <article class="hotel">
+        <div class="img img-taj"></div>
+        <div class="info"><div><a href="#">Hotel Tajmahal Palace</a><p>Mumbai, India</p></div><span class="price">RS 2000</span></div>
+      </article>
+      <article class="hotel">
+        <div class="img img-blanc"></div>
+        <div class="info"><div><a href="#">Mont Blanc</a><p>Zurich, Switzerland</p></div><span class="price">RS 3200</span></div>
+      </article>
+      <article class="hotel">
+        <div class="img img-mariott"></div>
+        <div class="info"><div><a href="#">Hotel Mariott</a><p>Melbourne, Australia</p></div><span class="price">RS 1200</span></div>
+      </article>
+    </div>
+
+    <div class="sec-head deals-head">
+      <h3>Hot Deals</h3>
+      <span class="line"></span>
+    </div>
+    <div class="deals">
+      <a href="#" class="deal deal-paris">
+        <span class="tag tag-red">%25</span>
+        <small class="from">From RS 350</small>
+        <strong>PARIS EUROSTAR BREAKS</strong>
+        <em>CURABITUR FRINGILLA MAURIS INTERDUM NEC MAGNA</em>
+      </a>
+      <a href="#" class="deal deal-island">
+        <span class="tag tag-gift">&#127873;</span>
+        <small class="from italic">TRAVELS TO HONGKONG</small>
+        <em>CURABITUR FRINGILLA MAURIS INTERDUM NEC MAGNA<br>TUR FRINGILLA MAURIS INTERDUM NEC MAGNA</em>
+      </a>
+    </div>
+
+    <div class="blogs">
+      <h4>Latest Blogs</h4>
+      <a href="#">Best places to visit in India</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div class="col">
+      <h5>Company</h5>
+      <a href="#">About the company</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Career</a>
+      <a href="#">Address</a>
+    </div>
+    <div class="col">
+      <h5>Customer Support</h5>
+      <a href="#">Contact</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="col">
+      <h5>Follow us</h5>
+      <div class="social">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">t</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="YouTube">&#9654;</a>
+        <a href="#" aria-label="Google Plus">g+</a>
+      </div>
+    </div>
+    <div class="col subscribe">
+      <h5>Don't miss our deals and offers</h5>
+      <form id="subForm">
+        <input type="email" id="subEmail" placeholder="Enter your email id" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+      <p class="msg" id="subMsg"></p>
+    </div>
+  </div>
+  <div class="container copy">copyright(c) 2013, All rights reserved</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
